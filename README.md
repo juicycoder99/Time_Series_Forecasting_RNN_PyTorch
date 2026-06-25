@@ -1,11 +1,11 @@
-# CS596 Final Project — Time-Series Forecasting with RNNs (PyTorch)
+# Time-Series Forecasting with RNNs (PyTorch)
 
-Final project for **CS596 – Special Topics on Deep Learning**, Bishop's University.
+Comparing vanilla RNN, LSTM, and GRU architectures for one-step-ahead temperature forecasting on a decade-long daily series.
 
 Recurrent neural networks for one-step-ahead forecasting of the **Daily Minimum Temperatures**
 series (Melbourne, 1981–1990). A vanilla RNN, an LSTM, and a GRU are implemented in PyTorch
-(GPU-accelerated) and compared. The solution is in
-[`Final_Project_RNN_TimeSeries.ipynb`](Final_Project_RNN_TimeSeries.ipynb).
+(GPU-accelerated) and compared. The full implementation is in
+[`rnn_timeseries_forecasting.ipynb`](rnn_timeseries_forecasting.ipynb).
 
 ## Workflow
 
@@ -30,13 +30,13 @@ seasonal signal needs only short-range memory, so the LSTM/GRU gating advantage 
 
 ```bash
 pip install torch numpy pandas matplotlib scikit-learn   # CUDA build of torch for GPU
-jupyter notebook Final_Project_RNN_TimeSeries.ipynb
+jupyter notebook rnn_timeseries_forecasting.ipynb
 ```
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `Final_Project_RNN_TimeSeries.ipynb` | Full solution (RNN / LSTM / GRU comparison) |
+| `rnn_timeseries_forecasting.ipynb` | Full implementation and analysis (RNN / LSTM / GRU comparison) |
 | `daily-min-temperatures.csv` | Dataset (Melbourne daily minimum temperatures) |
-| `Final project.pdf` | Project description |
+| `PROJECT_BRIEF.pdf` | Project brief (goals, objectives, outcomes) |
